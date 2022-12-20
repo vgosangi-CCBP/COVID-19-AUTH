@@ -1,0 +1,29 @@
+GET http://localhost:3000/todos/1/
+
+####
+GET http://localhost:3000/agenda/status=TO%20DO
+
+
+####
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+ "id": 6,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": 54465546
+}
+
+####
+
+GET http://localhost:3000/todos/?search_q=Buy
+
+
+####
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{ "dueDate": "2021-01-12"  }
